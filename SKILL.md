@@ -187,6 +187,17 @@ metadata:
 >
 > 请告知您的选择。
 
+### Word 导出操作指令
+
+当用户选择 Word 格式输出时，按以下步骤操作：
+
+1. **检查依赖**：运行 `python -c "import docx"` 检查是否安装 python-docx
+2. **安装依赖**（如未安装）：运行 `pip install python-docx`
+3. **生成文档**：使用 skill 自带脚本 `python scripts/export-word.py <markdown文件> <输出路径.docx>`，或使用 python-docx 库直接生成
+4. **验证文件**：确认文件已生成且大小 > 0，向用户展示文件路径
+
+> **注意**：必须在生成后验证文件是否真实存在，不要仅凭代码执行无报错就判断成功。
+
 ---
 
 ## 文档类型选择指南
