@@ -40,28 +40,45 @@
 
 ## 安装方式
 
-### 用户级安装（推荐）
+### QoderWork
+1. 下载 skill 压缩包（.zip）
+2. 打开 SKILL Hub（skills.kingdee.com），点击右上角「+ 安装技能」
+3. 拖放 .zip 文件或 SKILL.md 文件到安装窗口，点击「安装」
 
-将 skill 文件夹复制到用户目录：
-
+### Qoder IDE
 ```bash
+# 用户级安装
 cp -r kingdee-article-writer ~/.qoder/skills/
+# 项目级安装
+cp -r kingdee-article-writer /path/to/project/.qoder/skills/
 ```
 
-### 项目级安装
-
-将 skill 文件夹复制到项目目录：
-
+### Claude Code
 ```bash
-cp -r kingdee-article-writer /path/to/your/project/.qoder/skills/
+# 用户级安装
+cp -r kingdee-article-writer ~/.claude/skills/
+# 项目级安装
+cp -r kingdee-article-writer /path/to/project/.claude/skills/
+```
+
+### Trae
+```bash
+# 用户级安装
+cp -r kingdee-article-writer ~/.trae/skills/
+# 项目级安装
+cp -r kingdee-article-writer /path/to/project/.trae/skills/
 ```
 
 ## 使用方法
 
 ### 触发方式
 
-1. **手动触发**：在对话框输入 `@金蝶产品文档写作助手`
-2. **自动触发**：直接描述金蝶文档相关的写作需求（如"帮我写一篇星瀚的功能介绍"），技能将自动识别并触发
+| 平台 | 手动触发 | 自动触发 |
+|------|---------|---------|
+| QoderWork | `@kingdee-article-writer` | 描述金蝶文档相关需求时自动识别 |
+| Qoder | `/kingdee-article-writer` | 描述金蝶文档相关需求时自动识别 |
+| Claude Code | `/kingdee-article-writer` | 描述金蝶文档相关需求时自动识别 |
+| Trae | `/kingdee-article-writer` | 描述金蝶文档相关需求时自动识别 |
 
 ### 交互流程
 
